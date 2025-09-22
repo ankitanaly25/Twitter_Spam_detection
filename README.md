@@ -1,102 +1,37 @@
 # Twitter_Spam_detection
-Twitter Spam Detection 🚀
+Twitter Spam Detection
 
-A machine learning project to detect spam vs. non-spam tweets using text preprocessing, feature engineering, and classification models.
-
-📌 Project Overview
-
-The goal of this project is to classify tweets as either spam (bot-generated/irrelevant) or ham (genuine).
-This helps improve user experience and maintain platform integrity by filtering unwanted content.
-
-🗂️ Dataset
-
-Source: Twitter dataset (CSV format).
-
-Cleaning steps:
-
-Removed unnecessary columns (Unnamed: 2, Unnamed: 3, Unnamed: 4).
-
-Handled null values.
-
-Preprocessed text (lowercasing, punctuation removal, stopword removal, tokenization).
+A machine learning project to classify tweets as spam or genuine using text preprocessing and classification models.
 
 ⚙️ Tech Stack
 
-Programming Language: Python 3
+Python, Pandas, NumPy
 
-Libraries:
+NLTK (text preprocessing)
 
-pandas, numpy → Data processing
+Scikit-learn (Naive Bayes, Logistic Regression, etc.)
 
-matplotlib, seaborn → Visualization
+Matplotlib, Seaborn (visualization)
 
-nltk → Text preprocessing (stopwords, tokenization)
+📌 Workflow
 
-scikit-learn → ML models (Naive Bayes, Logistic Regression, etc.)
+Data cleaning (removed null/unused columns)
 
-🔑 Features
+Text preprocessing (punctuation removal, tokenization, stopwords)
 
-✔️ Text cleaning & preprocessing (punctuation removal, tokenization, stopword removal)
-✔️ Bag-of-Words feature extraction
-✔️ Training multiple classification models
-✔️ Model evaluation with accuracy and confusion matrix
+Feature extraction (Bag-of-Words)
 
-🏗️ Methodology
+Model training & evaluation
 
-Data Preprocessing
-
-Removed null/irrelevant columns
-
-Tokenized text using NLTK
-
-Removed stopwords & punctuation
-
-Feature Engineering
-
-Converted text into numerical vectors (Bag-of-Words, CountVectorizer)
-
-Model Training
-
-Naive Bayes Classifier
-
-Logistic Regression
-
-(Other models depending on your notebook)
-
-Evaluation
-
-Accuracy Score
-
-Confusion Matrix & Classification Report
-
-📊 Results
-
-Achieved strong performance in distinguishing spam vs. non-spam tweets.
-
-Best performing model: (fill in after checking results – e.g., Naive Bayes with 96% accuracy)
-
-🚀 How to Run
-
-Clone the repo:
-
+🚀 Run
 git clone https://github.com/your-username/twitter-spam-detection.git
 cd twitter-spam-detection
-
-
-Install dependencies:
-
 pip install -r requirements.txt
-
-
-Run the notebook:
-
 jupyter notebook "Twitter spam detection.ipynb"
 
-📌 Future Scope
+✨ Future Scope
 
-Apply advanced models (LSTMs, Transformers) for better accuracy.
+Use deep learning models (LSTM, Transformers)
 
-Deploy as a web app using Flask/Streamlit.
-
-Integrate real-time Twitter API for live spam detection.
+Deploy with Flask/Streamlit
 
